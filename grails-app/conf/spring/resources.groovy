@@ -1,5 +1,5 @@
-import grails.rest.render.hal.HalJsonCollectionRenderer
-import grails.rest.render.hal.HalJsonRenderer
+import haltest.HalJsonCollectionRenderer
+import haltest.HalJsonRenderer
 
 // Place your Spring DSL code here
 beans = {

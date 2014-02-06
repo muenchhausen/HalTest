@@ -42,42 +42,4 @@ class ProductController extends RestfulController  {
         context.addPersistentEntity(Category)
         return context
     }
-/*
-    @Override
-    def show(Product product) {
-        product.link rel:'self', href:'test'
-        respond product
-    }
-
-    @Override
-    def index(Integer max) {
-        // HalJsonCollectionRenderer renderer = getCollectionRenderer()
-
-
-        params.max = Math.min(max ?: 10, 100)
-        respond listAllResources(params), model: [("${resourceName}Count".toString()): countResources()]
-    }
-*/
-
-    //protected HalJsonCollectionRenderer getCollectionRenderer() {
-
-        // renderer.messageSource = new StaticMessageSource()
-        // def generator = new DefaultLinkGenerator("http://localhost", null)
-        // generator.grailsUrlConverter = new CamelCaseUrlConverter()
-
-/*
-        def evaluator = new DefaultUrlMappingEvaluator(new MockServletContext())
-        def allMappings = evaluator.evaluateMappings {
-            "/products"(resources: "product")
-        }
-        generator.urlMappingsHolder =  new DefaultUrlMappingsHolder(allMappings)
-*/
-      //  renderer
-    //}
-
-
-
-
-
-
 }

@@ -1,13 +1,13 @@
 HalTest
 =======
 
-A sample application for GRAILS RESTful Webservice in HAL style. This sample should 
-* show a running Grails RestfulController 
+A sample application for GRAILS RESTful Webservice in HAL style. This sample 
+* shows a running Grails RestfulController 
 * presents latest [HAL][HAL] styles that combine the simplicity of JSON with the simple structure of Hypertext documents
 * The documentation is done by [restapidoc plugin][restapidoc plugin] 
-* The sample coveres a simplified unrealistic shop of endangered animals
-* help to understand if everything is put together (one step further than a hello world sample)
-* give basis for further discussions for further requirements for service oriented headless Grails applications
+* The sample coveres a simplified unrealistic shop of endangered animals :)
+* help to understand if everything is put together ... one step further than a hello world sample
+* give a basis for further discussions for future requirements of new service oriented headless Grails applications
 
 [HAL]: http://stateless.co/hal_specification.html
 [restapidoc plugin]: https://github.com/siemens/restapidoc

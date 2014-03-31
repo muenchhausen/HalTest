@@ -113,3 +113,9 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+environments {
+    production {
+        resourcemodule.sandboxUrlPrefix = "http://localhost:8080/${appName}"
+    }
+}

@@ -22,7 +22,9 @@ To run it, just
 * do a git clone on this project
 * do a git clone of [restapidoc plugin] - e.g. into the same parent directory as this project
 * follow the instructions of [restapidoc plugin]
+* open Browser http://localhost:8080/HalTest
 
+Please note: just GET operations are implemented in this sample yet!
 
 License
 -------

@@ -7,7 +7,8 @@ class BootStrap {
     def apiDocumentationService
 
     def init = { servletContext ->
-        apiDocumentationService.init()
+        // not required - the correct location for it is in file RestapidocGrailsPlugin.groovy: doWithApplicationContext
+        // apiDocumentationService.init()
 
         def taxon = new TaxonSpecies(name:'Picus viridis', kingdom: ' Animalia', tclass: 'Aves', order: 'Piciformes', family: 'Picidae', genus: 'Picus').save(flush: true)
 

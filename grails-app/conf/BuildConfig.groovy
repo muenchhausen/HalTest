@@ -21,6 +21,7 @@ grails.project.fork = [
     console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
 ]
 
+// Either use the restapidoc Plugin as source:
 grails.plugin.location.'restapidoc'="../restapidoc"
 
 grails.project.dependency.resolver = "ivy" // or ivy
@@ -46,6 +47,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+	//mavenRepo "grails.org/plugins"
     }
 
     dependencies {
@@ -60,6 +62,9 @@ grails.project.dependency.resolution = {
         // plugins for the compile step
         compile ":scaffolding:2.0.2"
         compile ':cache:1.1.1'
+
+	// or download it:	
+	// compile ":restapidoc:0.1.1"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"

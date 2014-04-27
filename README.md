@@ -24,6 +24,11 @@ To run it, just
 * follow the instructions of [restapidoc plugin]
 * open Browser http://localhost:8080/HalTest
 
+You can also use a binary of restapidoc:
+* edit grails-app/conf/BuildConfig.groovy
+* comment the line: grails.plugin.location.'restapidoc'="../restapidoc"
+* uncomment the line: compile ":restapidoc:0.1.1"
+
 Please note: just GET operations are implemented in this sample yet!
 
 License

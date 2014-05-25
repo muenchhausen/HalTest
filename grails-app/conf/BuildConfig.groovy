@@ -24,7 +24,8 @@ grails.project.fork = [
 // Either use the restapidoc Plugin as source:
 grails.plugin.location.'restapidoc'="../restapidoc"
 
-grails.project.dependency.resolver = "ivy" // or ivy
+
+grails.project.dependency.resolver = "maven" // or ivy
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
@@ -47,29 +48,37 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
-	//mavenRepo "grails.org/plugins"
     }
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-        // runtime 'mysql:mysql-connector-java:5.1.24'
+        // runtime 'mysql:mysql-connector-java:5.1.29'
+        // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
+
+        compile "org.springframework:spring-orm:$springVersion"
     }
 
     plugins {
         // plugins for the build system only
-        build ":tomcat:7.0.52.1"
+        build ":tomcat:7.0.53"
 
         // plugins for the compile step
-        compile ":scaffolding:2.0.2"
-        compile ':cache:1.1.1'
+        compile ":scaffolding:2.1.0"
+        compile ':cache:1.1.6'
+        compile ":asset-pipeline:1.8.7"
 
-	// or download it:	
-	// compile ":restapidoc:0.1.1"
+        // or download it:
+        // compile ":restapidoc:0.1.1"
 
         // plugins needed at runtime but not for compilation
-        runtime ":hibernate:3.6.10.9" // or ":hibernate4:4.3.4"
-        runtime ":database-migration:1.3.8"
-        runtime ":jquery:1.11.0.2"
-        runtime ":resources:1.2.7"
+        runtime ":hibernate4:4.3.5.3" // or ":hibernate:3.6.10.15"
+        runtime ":database-migration:1.4.0"
+        runtime ":jquery:1.11.1"
+
+        // Uncomment these to enable additional asset-pipeline capabilities
+        //compile ":sass-asset-pipeline:1.7.4"
+        //compile ":less-asset-pipeline:1.7.0"
+        //compile ":coffee-asset-pipeline:1.7.0"
+        //compile ":handlebars-asset-pipeline:1.3.0.3"
     }
 }

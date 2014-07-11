@@ -21,7 +21,7 @@ grails.project.fork = [
     console: [maxMemory: 768, minMemory: 64, debug: false, maxPerm: 256]
 ]
 
-// Either use the restapidoc Plugin as source:
+// RESTAPIDOC EITHER use the restapidoc Plugin as source:
 grails.plugin.location.'restapidoc'="../restapidoc"
 
 
@@ -67,8 +67,8 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.7'
         compile ":asset-pipeline:1.8.11"
 
-        // or download it:
-        // compile ":restapidoc:0.1.1"
+        // RESTAPIDOC OR download it:
+        // compile ":restapidoc:0.1.3"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.5.4" // or ":hibernate:3.6.10.15"

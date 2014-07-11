@@ -26,6 +26,7 @@ import restapidoc.annotations.ApiProperty
  */
 @ApiDescription(description = "Endangered Animals")
 class Pet {
+    /** embedded properties are not working, see GRAILS-10954: **/
     static embedded = ['naturalBehaviour','captiveBehaviour']
 
     static mapping = {

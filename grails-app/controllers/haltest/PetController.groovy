@@ -55,6 +55,7 @@ class PetController extends DocumentedRestfulController  {
      * the following lines of code are required to embed type correctly in hal rendering.
      * This is a workaround, see GRAILS-10954
      */
+    /* this workaround was working with Grails 2.3.7:
     @PostConstruct
     void init() {
         halPCollectionRenderer.mappingContext = mappingContext
@@ -66,6 +67,7 @@ class PetController extends DocumentedRestfulController  {
         context.addPersistentEntity(Behaviour)
         return context
     }
+    */
     /*
      * end workaround for GRAILS-10954
      */

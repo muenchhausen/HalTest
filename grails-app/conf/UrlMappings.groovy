@@ -8,6 +8,7 @@ class UrlMappings {
         }
 
         "/"(view:"/index")
+	"/api/pets"(resources:"pet")
         "500"(view:'/error')
     }
 }
